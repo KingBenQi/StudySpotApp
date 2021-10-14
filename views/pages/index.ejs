@@ -5,13 +5,16 @@
   </head>
   <body class="container">
     <header><%- include('../partials/header'); %></header>
-    <div><%- include('../partials/sidebar'); %></div>
-    <main>
-      <div class="jumbotron">
-        <h1>StudySpot</h1>
-        <p>Welcome to our StudySpot App :D</p>
+    <div><%- include('../partials/searchbar'); %></div>
+    <div class="row">
+      <div class="col-md-3"><%- include('../partials/sidebar'); %></div>
+      <div class="col-md-6">
+        <div class="jumbotron">
+          <h1>StudySpot</h1>
+          <p>Welcome to our StudySpot App :D</p>
+        </div>
       </div>
-    </main>
+    </div>
 
     <footer><%- include('../partials/footer'); %></footer>
   </body>
