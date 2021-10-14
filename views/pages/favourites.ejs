@@ -5,16 +5,16 @@
   </head>
   <body class="container">
     <header><%- include('../partials/header'); %></header>
-    <div><%- include('../partials/sidebar'); %></div>
-
-    <main>
-      <div class="row">
+    <div><%- include('../partials/searchbar'); %></div>
+    <div class="row">
+      <div class="col-md-3"><%- include('../partials/sidebar'); %></div>
+      <div class="col-md-6">
         <div class="jumbotron">
-          <h1>This is the favourites page</h1>
-          <p>Rooms</p>
+          <h1>Favourites</h1>
+          <p>Favourites Page</p>
         </div>
       </div>
-    </main>
+    </div>
 
     <footer><%- include('../partials/footer'); %></footer>
   </body>
