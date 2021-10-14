@@ -6,6 +6,7 @@ https://www.digitalcrafts.com/blog/learn-how-start-new-group-project-github
 3. Work on code
 
 While working on feature:
+
 4. git commit 
 5. git push origin {branchName}
 
