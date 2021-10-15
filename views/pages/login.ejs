@@ -5,10 +5,182 @@
   </head>
   <body class="d-flex flex-column min-vh-100">
     <div class="container-fluid">
-      <div><%- include('../partials/header'); %></div>
-      <div class="jumbotron">
-        <h1>My Bookings</h1>
-        <p>My Bookings Page</p>
+      <div><%- include('../partials/loginheader'); %></div>
+      <div class="container-fluid my-5 py-3" style="max-width: 500px">
+        <ul
+          class="nav nav-tabs d-flex justify-content-center"
+          id="myTab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#register"
+              type="button"
+              role="tab"
+              aria-controls="register"
+              aria-selected="false"
+            >
+              New to StudySpot?
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#login"
+              type="button"
+              role="tab"
+              aria-controls="login"
+              aria-selected="true"
+            >
+              Already Registered?
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content text-center" id="myTabContent">
+          <div
+            class="tab-pane fade my-2"
+            id="register"
+            role="tabpanel"
+            aria-labelledby="register-tab"
+          >
+            <h1>Register</h1>
+            <form action="/register" method="POST" class="py-4">
+              <div class="mb-3">
+                <label class="form-label" for="email">Email Address</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="password">Password</label>
+                <input
+                  class="form-control"
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="confirmpw"
+                  >Confirm Password</label
+                >
+                <input
+                  class="form-control"
+                  type="password"
+                  id="confirmpw"
+                  name="confirmpw"
+                  required
+                />
+              </div>
+              <button class="btn btn-success">Sign Up</button>
+            </form>
+          </div>
+          <div
+            class="tab-pane fade show active my-2"
+            id="login"
+            role="tabpanel"
+            aria-labelledby="login-tab"
+          >
+            <h1>Sign In</h1>
+            <form action="/login" method="POST" class="py-4">
+              <div class="mb-3">
+                <label class="form-label" for="email">Login with Email</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="password">Password</label>
+                <input
+                  class="form-control"
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                />
+              </div>
+              <!-- Trigger modal -->
+              <p>
+                <a
+                  class="font-italic"
+                  href="#exampleModal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >Forgot your Password?</a
+                >
+              </p>
+              <button class="btn btn-success">Sign In</button>
+            </form>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Reset Password
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="py-2">
+                        Enter your email address below and we will send you a link to reset your password.
+                    </p>
+                  <form action="/resetpw" method="POST" class="py-2 mb-3">
+                    <div class="mb-3">
+                      <label class="form-label" for="currentpw">Registered Email Address</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        id="currentpw"
+                        name="currentpw"
+                        required
+                      />
+                    </div>  
+                    <button type="button" class="btn btn-primary">
+                        Reset Password
+                    </button>                    
+                    </form>
+                  <div>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="mt-auto"><%- include('../partials/footer'); %></footer>

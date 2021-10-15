@@ -33,6 +33,11 @@ app.get("/login", function (req, res) {
   res.render("pages/login");
 });
 
+// resetpw page
+app.get("/changepw", function (req, res) {
+  res.render("pages/changepw");
+});
+
 // modal page
 app.get("/modal", function (req, res) {
   res.render("pages/modal");
