@@ -4,6 +4,18 @@ var app = express();
 // set the view engine to ejs
 app.set("view engine", "ejs");
 
+// set express to use css file
+app.use(express.static(__dirname + "/public"));
+
+// set res details
+app.use((req, res, next) => {
+  res.locals.currentUser = req.user;
+  res.locals.url = req.originalUrl;
+  res.locals.host = req.get("host");
+  res.locals.protocol = req.protocol;
+  next();
+});
+
 // use res.render to load up an ejs view file
 
 // index page
