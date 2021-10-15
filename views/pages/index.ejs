@@ -3,88 +3,92 @@
   <head>
     <%- include('../partials/head'); %>
   </head>
-  <body class="container-fluid">
-    <header><%- include('../partials/header'); %></header>
-    <div class="row position-fixed col-12">
-      <%- include('../partials/searchbar'); %>
-    </div>
-    <div class="row my-5">
-      <div class=>
-        <div class="position-fixed"><%- include('../partials/sidebar'); %></div>
+  <body class="d-flex flex-column min-vh-100">
+    <div class="container-fluid">
+      <div><%- include('../partials/header'); %></div>
+      <div class="row col-12 position-fixed my-5 py-3">
+        <%- include('../partials/searchbar'); %>
       </div>
-      <div class="col-9 offset-md-3">
-        <div class="jumbotron">
-          <h1>StudySpot</h1>
-          <p>
-            Welcome to our StudySpot App :D Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Maxime officiis architecto illum
-            reprehenderit eum eveniet, modi impedit velit cupiditate.
-            Necessitatibus esse ipsum velit dolorem dolores non. Iusto officiis
-            ex quam! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Maxime officiis architecto illum reprehenderit eum eveniet, modi
-            impedit velit cupiditate. Necessitatibus esse ipsum velit dolorem
-            dolores non. Iusto officiis ex quam! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Maxime officiis architecto illum
-            reprehenderit eum eveniet, modi impedit velit cupiditate.
-            Necessitatibus esse ipsum velit dolorem dolores non. Iusto officiis
-            ex quam! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Maxime officiis architecto illum reprehenderit eum eveniet, modi
-            impedit velit cupiditate. Necessitatibus esse ipsum velit dolorem
-            dolores non. Iusto officiis ex quam! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Maxime officiis architecto illum
-            reprehenderit eum eveniet, modi impedit velit cupiditate.
-            Necessitatibus esse ipsum velit dolorem dolores non. Iusto officiis
-            ex quam! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Maxime officiis architecto illum reprehenderit eum eveniet, modi
-            impedit velit cupiditate. Necessitatibus esse ipsum velit dolorem
-            dolores non. Iusto officiis ex quam! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Maxime officiis architecto illum
-            reprehenderit eum eveniet, modi impedit velit cupiditate.
-            Necessitatibus esse ipsum velit dolorem dolores non. Iusto officiis
-            ex quam! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Maxime officiis architecto illum reprehenderit eum eveniet, modi
-            impedit velit cupiditate. Necessitatibus esse ipsum velit dolorem
-            dolores non. Iusto officiis ex quam! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Maxime officiis architecto illum
-            reprehenderit eum eveniet, modi impedit velit cupiditate.
-            Necessitatibus esse ipsum velit dolorem dolores non. Iusto officiis
-            ex quam! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Maxime officiis architecto illum reprehenderit eum eveniet, modi
-            impedit velit cupiditate. Necessitatibus esse ipsum velit dolorem
-            dolores non. Iusto officiis ex quam! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Maxime officiis architecto illum
-            reprehenderit eum eveniet, modi impedit velit cupiditate.
-            Necessitatibus esse ipsum velit dolorem dolores non. Iusto officiis
-            ex quam! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Maxime officiis architecto illum reprehenderit eum eveniet, modi
-            impedit velit cupiditate. Necessitatibus esse ipsum velit dolorem
-            dolores non. Iusto officiis ex quam! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Maxime officiis architecto illum
-            reprehenderit eum eveniet, modi impedit velit cupiditate.
-            Necessitatibus esse ipsum velit dolorem dolores non. Iusto officiis
-            ex quam! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Maxime officiis architecto illum reprehenderit eum eveniet, modi
-            impedit velit cupiditate. Necessitatibus esse ipsum velit dolorem
-            dolores non. Iusto officiis ex quam! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Maxime officiis architecto illum
-            reprehenderit eum eveniet, modi impedit velit cupiditate.
-            Necessitatibus esse ipsum velit dolorem dolores non. Iusto officiis
-            ex quam! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Maxime officiis architecto illum reprehenderit eum eveniet, modi
-            impedit velit cupiditate. Necessitatibus esse ipsum velit dolorem
-            dolores non. Iusto officiis ex quam! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Maxime officiis architecto illum
-            reprehenderit eum eveniet, modi impedit velit cupiditate.
-            Necessitatibus esse ipsum velit dolorem dolores non. Iusto officiis
-            ex quam! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Maxime officiis architecto illum reprehenderit eum eveniet, modi
-            impedit velit cupiditate. Necessitatibus esse ipsum velit dolorem
-            dolores non. Iusto officiis ex quam!
-          </p>
+      <div class="row mt-5">
+        <div class="col-3 position-fixed mt-5 pt-3">
+          <%- include('../partials/sidebar'); %>
+        </div>
+        <div class="col-9 offset-3 mt-5 pt-3">
+          <div class="jumbotron">
+            <h1>StudySpot</h1>
+            <p>
+              Welcome to our StudySpot App :D Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Maxime officiis architecto illum
+              reprehenderit eum eveniet, modi impedit velit cupiditate.
+              Necessitatibus esse ipsum velit dolorem dolores non. Iusto
+              officiis ex quam! Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Maxime officiis architecto illum reprehenderit
+              eum eveniet, modi impedit velit cupiditate. Necessitatibus esse
+              ipsum velit dolorem dolores non. Iusto officiis ex quam! Lorem
+              ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+              officiis architecto illum reprehenderit eum eveniet, modi impedit
+              velit cupiditate. Necessitatibus esse ipsum velit dolorem dolores
+              non. Iusto officiis ex quam! Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Maxime officiis architecto illum
+              reprehenderit eum eveniet, modi impedit velit cupiditate.
+              Necessitatibus esse ipsum velit dolorem dolores non. Iusto
+              officiis ex quam! Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Maxime officiis architecto illum reprehenderit
+              eum eveniet, modi impedit velit cupiditate. Necessitatibus esse
+              ipsum velit dolorem dolores non. Iusto officiis ex quam! Lorem
+              ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+              officiis architecto illum reprehenderit eum eveniet, modi impedit
+              velit cupiditate. Necessitatibus esse ipsum velit dolorem dolores
+              non. Iusto officiis ex quam! Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Maxime officiis architecto illum
+              reprehenderit eum eveniet, modi impedit velit cupiditate.
+              Necessitatibus esse ipsum velit dolorem dolores non. Iusto
+              officiis ex quam! Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Maxime officiis architecto illum reprehenderit
+              eum eveniet, modi impedit velit cupiditate. Necessitatibus esse
+              ipsum velit dolorem dolores non. Iusto officiis ex quam! Lorem
+              ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+              officiis architecto illum reprehenderit eum eveniet, modi impedit
+              velit cupiditate. Necessitatibus esse ipsum velit dolorem dolores
+              non. Iusto officiis ex quam! Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Maxime officiis architecto illum
+              reprehenderit eum eveniet, modi impedit velit cupiditate.
+              Necessitatibus esse ipsum velit dolorem dolores non. Iusto
+              officiis ex quam! Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Maxime officiis architecto illum reprehenderit
+              eum eveniet, modi impedit velit cupiditate. Necessitatibus esse
+              ipsum velit dolorem dolores non. Iusto officiis ex quam! Lorem
+              ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+              officiis architecto illum reprehenderit eum eveniet, modi impedit
+              velit cupiditate. Necessitatibus esse ipsum velit dolorem dolores
+              non. Iusto officiis ex quam! Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Maxime officiis architecto illum
+              reprehenderit eum eveniet, modi impedit velit cupiditate.
+              Necessitatibus esse ipsum velit dolorem dolores non. Iusto
+              officiis ex quam! Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Maxime officiis architecto illum reprehenderit
+              eum eveniet, modi impedit velit cupiditate. Necessitatibus esse
+              ipsum velit dolorem dolores non. Iusto officiis ex quam! Lorem
+              ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+              officiis architecto illum reprehenderit eum eveniet, modi impedit
+              velit cupiditate. Necessitatibus esse ipsum velit dolorem dolores
+              non. Iusto officiis ex quam! Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Maxime officiis architecto illum
+              reprehenderit eum eveniet, modi impedit velit cupiditate.
+              Necessitatibus esse ipsum velit dolorem dolores non. Iusto
+              officiis ex quam! Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Maxime officiis architecto illum reprehenderit
+              eum eveniet, modi impedit velit cupiditate. Necessitatibus esse
+              ipsum velit dolorem dolores non. Iusto officiis ex quam! Lorem
+              ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+              officiis architecto illum reprehenderit eum eveniet, modi impedit
+              velit cupiditate. Necessitatibus esse ipsum velit dolorem dolores
+              non. Iusto officiis ex quam!
+            </p>
+          </div>
         </div>
       </div>
     </div>
-
     <footer><%- include('../partials/footer'); %></footer>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<div class="flex-shrink-0 p-3 bg-white" style="width: 280px">
+<div class="flex-shrink-0 p-3 bg-white">
   <a
     href="/"
     class="
@@ -11,10 +11,7 @@
       border-bottom
     "
   >
-    <svg class="bi me-2" width="30" height="24">
-      <use xlink:href="#bootstrap"></use>
-    </svg>
-    <span class="fs-5 fw-semibold">Filter Bar</span>
+    <span class="fs-5 fw-semibold">Filter Rooms</span>
   </a>
   <ul class="list-unstyled ps-0">
     <li class="mb-1">
@@ -26,49 +23,188 @@
       >
         School
       </button>
-      <div class="collapse" id="school-collapse" style="">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+      <div class="collapse" id="school-collapse">
+        <form
+          class="
+            btn-toggle-nav
+            list-unstyled
+            fw-normal
+            pb-1
+            mx-2
+            small
+            overflow-auto
+          "
+          style="max-height: 100px"
+        >
           <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="defaultCheck1"
-            />
-            <label class="form-check-label" for="defaultCheck1">
-              Default checkbox
-            </label>
+            <input class="form-check-input" type="checkbox" value="" id="ADM" />
+            <label class="form-check-label" for="ADM"> ADM </label>
           </div>
           <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="defaultCheck2"
-            />
-            <label class="form-check-label" for="defaultCheck2">
-              Disabled checkbox
-            </label>
+            <input class="form-check-input" type="checkbox" value="" id="LHN" />
+            <label class="form-check-label" for="LHN"> LHN </label>
           </div>
-        </ul>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="BIW" />
+            <label class="form-check-label" for="BIW"> BIW </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="CBE" />
+            <label class="form-check-label" for="CBE"> CBE </label>
+          </div>
+        </form>
       </div>
     </li>
     <li class="mb-1">
       <button
         class="btn btn-toggle align-items-center rounded collapsed"
         data-bs-toggle="collapse"
-        data-bs-target="#Time-collapse"
+        data-bs-target="#time-collapse"
         aria-expanded="false"
       >
         Time
       </button>
-      <div class="collapse" id="Time-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">Overview</a></li>
-          <li><a href="#" class="link-dark rounded">Weekly</a></li>
-          <li><a href="#" class="link-dark rounded">Monthly</a></li>
-          <li><a href="#" class="link-dark rounded">Annually</a></li>
-        </ul>
+      <div class="collapse" id="time-collapse">
+        <form
+          class="
+            btn-toggle-nav
+            list-unstyled
+            fw-normal
+            pb-1
+            mx-2
+            small
+            overflow-auto
+          "
+          style="max-height: 100px"
+        >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="time01"
+            />
+            <label class="form-check-label" for="time01"> 0830 - 0930 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="time02"
+            />
+            <label class="form-check-label" for="time02"> 0930 - 1030 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="time03"
+            />
+            <label class="form-check-label" for="time03"> 1030 - 1130 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="time04"
+            />
+            <label class="form-check-label" for="time04"> 1230 - 1330 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="time05"
+            />
+            <label class="form-check-label" for="time05"> 1330 - 1430 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="time06"
+            />
+            <label class="form-check-label" for="time06"> 1430 - 1530 </label>
+          </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="time07"
+            />
+            <label class="form-check-label" for="time07"> 1530 - 1630 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="time08"
+            />
+            <label class="form-check-label" for="time08"> 1630 - 1730 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="time08"
+            />
+            <label class="form-check-label" for="time08"> 1730 - 1830 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="time09"
+            />
+            <label class="form-check-label" for="time09"> 1830 - 1930 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="time10"
+            />
+            <label class="form-check-label" for="time10"> 1930 - 2030 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="time11"
+            />
+            <label class="form-check-label" for="time11"> 2030 - 2130 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="time12"
+            />
+            <label class="form-check-label" for="time12"> 2130 - 2230 </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="time13"
+            />
+            <label class="form-check-label" for="time13"> 2230 - 2330 </label>
+          </div>
+        </form>
       </div>
     </li>
     <li class="mb-1">
@@ -81,12 +217,64 @@
         Day
       </button>
       <div class="collapse" id="day-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">New</a></li>
-          <li><a href="#" class="link-dark rounded">Processed</a></li>
-          <li><a href="#" class="link-dark rounded">Shipped</a></li>
-          <li><a href="#" class="link-dark rounded">Returned</a></li>
-        </ul>
+        <form
+          class="
+            btn-toggle-nav
+            list-unstyled
+            fw-normal
+            pb-1
+            mx-2
+            small
+            overflow-auto
+          "
+          style="max-height: 100px"
+        >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="monday"
+            />
+            <label class="form-check-label" for="monday"> Monday </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="tuesday"
+            />
+            <label class="form-check-label" for="tuesday"> Tuesday </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="wednesday"
+            />
+            <label class="form-check-label" for="wednesday"> Wednesday </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="thursday"
+            />
+            <label class="form-check-label" for="thursday"> Thursday </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="friday"
+            />
+            <label class="form-check-label" for="friday"> Friday </label>
+          </div>
+        </form>
       </div>
     </li>
     <li class="mb-1">
@@ -99,12 +287,55 @@
         Tags
       </button>
       <div class="collapse" id="tags-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">New...</a></li>
-          <li><a href="#" class="link-dark rounded">Profile</a></li>
-          <li><a href="#" class="link-dark rounded">Settings</a></li>
-          <li><a href="#" class="link-dark rounded">Sign out</a></li>
-        </ul>
+        <form
+          class="
+            btn-toggle-nav
+            list-unstyled
+            fw-normal
+            pb-1
+            mx-2
+            small
+            overflow-auto
+          "
+          style="max-height: 100px"
+        >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="alone"
+            />
+            <label class="form-check-label" for="alone"> Alone </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="group"
+            />
+            <label class="form-check-label" for="group"> Group </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="meeting"
+            />
+            <label class="form-check-label" for="meeting"> Meeting </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="quiet"
+            />
+            <label class="form-check-label" for="quiet"> Quiet </label>
+          </div>
+        </form>
       </div>
     </li>
     <li class="mb-1">
@@ -114,15 +345,55 @@
         data-bs-target="#buddy-collapse"
         aria-expanded="false"
       >
-        Study Buddy
+        StudyBuddy
       </button>
       <div class="collapse" id="buddy-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">New...</a></li>
-          <li><a href="#" class="link-dark rounded">Profile</a></li>
-          <li><a href="#" class="link-dark rounded">Settings</a></li>
-          <li><a href="#" class="link-dark rounded">Sign out</a></li>
-        </ul>
+        <form class="btn-toggle-nav list-unstyled fw-normal pb-1 mx-2 small">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="studytgt"
+            />
+            <label class="form-check-label" for="studytgt">
+              Study Together
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="studymod"
+            />
+            <label class="form-check-label" for="studymod"> Study Mod </label>
+          </div>
+          <div class="input-group">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search for Mod"
+              aria-label="Search"
+            />
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  ></path>
+                </svg>
+              </button>
+            </span>
+          </div>
+        </form>
       </div>
     </li>
   </ul>

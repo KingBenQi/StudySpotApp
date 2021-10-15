@@ -3,19 +3,24 @@
   <head>
     <%- include('../partials/head'); %>
   </head>
-  <body class="container-fluid">
-    <header><%- include('../partials/header'); %></header>
-    <div><%- include('../partials/searchbar'); %></div>
-    <div class="row">
-      <div class="col-md-3"><%- include('../partials/sidebar'); %></div>
-      <div class="col-md-6">
-        <div class="jumbotron">
-          <h1>Favourites</h1>
-          <p>Favourites Page</p>
+  <body class="d-flex flex-column min-vh-100">
+    <div class="container-fluid">
+      <div><%- include('../partials/header'); %></div>
+      <div class="row col-12 position-fixed my-5 py-3">
+        <%- include('../partials/searchbar'); %>
+      </div>
+      <div class="row mt-5">
+        <div class="col-3 position-fixed mt-5 pt-3">
+          <%- include('../partials/sidebar'); %>
+        </div>
+        <div class="col-9 offset-3 mt-5 pt-3">
+          <div class="jumbotron">
+            <h1>Favourites</h1>
+            <p>Favourites Page</p>
+          </div>
         </div>
       </div>
     </div>
-
-    <footer><%- include('../partials/footer'); %></footer>
+    <footer class="mt-auto"><%- include('../partials/footer'); %></footer>
   </body>
 </html>

@@ -3,15 +3,14 @@
   <head>
     <%- include('../partials/head'); %>
   </head>
-  <body class="container-fluid">
-    <header><%- include('../partials/header'); %></header>
-    <main>
+  <body class="d-flex flex-column min-vh-100">
+    <div class="container-fluid">
+      <div><%- include('../partials/header'); %></div>
       <div class="jumbotron">
-        <h1>StudySpot</h1>
-        <p>Welcome to our StudySpot App :D</p>
+        <h1>My Bookings</h1>
+        <p>My Bookings Page</p>
       </div>
-    </main>
-
-    <footer><%- include('../partials/footer'); %></footer>
+    </div>
+    <footer class="mt-auto"><%- include('../partials/footer'); %></footer>
   </body>
 </html>
