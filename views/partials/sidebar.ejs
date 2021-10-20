@@ -1,20 +1,7 @@
-<div class="flex-shrink-0 p-3 bg-white overflow-auto" style="max-height: 80vh">
-  <a
-    href="/"
-    class="
-      d-flex
-      align-items-center
-      pb-3
-      mb-3
-      link-dark
-      text-decoration-none
-      border-bottom
-    "
-  >
-    <span class="fs-5 fw-semibold">Filter Rooms</span>
-  </a>
-  <ul class="list-unstyled ps-0">
-    <li class="mb-1">
+<div class="flex-shrink-0 p-3 overflow-auto">
+  <ul class="list-group list-group-flush">
+    <!--School Dropdown-->
+    <li class="list-group-item">
       <button
         class="btn btn-toggle align-items-center rounded collapsed"
         data-bs-toggle="collapse"
@@ -34,47 +21,97 @@
             small
             overflow-auto
           "
-          style="max-height: 100px"
+          style="max-height: 150px"
         >
+          <div class="scrollbar scrollbar-primary">
+            <div class="force-overflow"></div>
+          </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="ADM" />
+            <div class="checkbox">
+              <input
+                class="form-check-input shadow-none"
+                type="checkbox"
+                value=""
+                id="ADM"
+              />
+            </div>
             <label class="form-check-label" for="ADM"> ADM </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="LHN" />
+            <input
+              class="form-check-input shadow-none"
+              type="checkbox"
+              value=""
+              id="LHN"
+            />
             <label class="form-check-label" for="LHN"> LHN </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="BIW" />
+            <input
+              class="form-check-input shadow-none"
+              type="checkbox"
+              value=""
+              id="BIW"
+            />
             <label class="form-check-label" for="BIW"> BIW </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="CBE" />
+            <input
+              class="form-check-input shadow-none"
+              type="checkbox"
+              value=""
+              id="CBE"
+            />
             <label class="form-check-label" for="CBE"> CBE </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="HSS" />
+            <input
+              class="form-check-input shadow-none"
+              type="checkbox"
+              value=""
+              id="HSS"
+            />
             <label class="form-check-label" for="HSS"> HSS </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="LHS" />
-            <label class="form-check-label" for="LHS"> LHS </label>
+            <input
+              class="form-check-input shadow-none"
+              type="checkbox"
+              value=""
+              id="LHS"
+            />
+            <label class="form-check-label shadow-none" for="LHS"> LHS </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="NIE" />
+            <input
+              class="form-check-input shadow-none"
+              type="checkbox"
+              value=""
+              id="NIE"
+            />
             <label class="form-check-label" for="NIE"> NIE </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="NS" />
+            <input
+              class="form-check-input shadow-none"
+              type="checkbox"
+              value=""
+              id="NS"
+            />
             <label class="form-check-label" for="NS"> NS </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="SBS" />
+            <input
+              class="form-check-input shadow-none"
+              type="checkbox"
+              value=""
+              id="SBS"
+            />
             <label class="form-check-label" for="SBS"> SBS </label>
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="SPMS"
@@ -82,12 +119,17 @@
             <label class="form-check-label" for="SPMS"> SPMS </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="SS" />
+            <input
+              class="form-check-input shadow-none"
+              type="checkbox"
+              value=""
+              id="SS"
+            />
             <label class="form-check-label" for="SS"> SS </label>
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="WKWSCI"
@@ -97,7 +139,9 @@
         </form>
       </div>
     </li>
-    <li class="mb-1">
+
+    <!--Time Dropdown-->
+    <li class="list-group-item">
       <button
         class="btn btn-toggle align-items-center rounded collapsed"
         data-bs-toggle="collapse"
@@ -117,11 +161,11 @@
             small
             overflow-auto
           "
-          style="max-height: 100px"
+          style="max-height: 150px"
         >
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="time01"
@@ -130,7 +174,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="time02"
@@ -139,7 +183,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="time03"
@@ -148,7 +192,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="time04"
@@ -157,7 +201,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="time05"
@@ -166,7 +210,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="time06"
@@ -176,7 +220,7 @@
 
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="time07"
@@ -185,7 +229,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="time08"
@@ -194,7 +238,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="time08"
@@ -203,7 +247,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="time09"
@@ -212,7 +256,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="time10"
@@ -221,7 +265,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="time11"
@@ -230,7 +274,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="time12"
@@ -239,7 +283,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="time13"
@@ -249,7 +293,9 @@
         </form>
       </div>
     </li>
-    <li class="mb-1">
+
+    <!--Day Dropdown-->
+    <li class="list-group-item">
       <button
         class="btn btn-toggle align-items-center rounded collapsed"
         data-bs-toggle="collapse"
@@ -269,11 +315,11 @@
             small
             overflow-auto
           "
-          style="max-height: 100px"
+          style="max-height: 150px"
         >
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="monday"
@@ -282,7 +328,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="tuesday"
@@ -291,7 +337,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="wednesday"
@@ -300,7 +346,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="thursday"
@@ -309,7 +355,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="friday"
@@ -319,7 +365,9 @@
         </form>
       </div>
     </li>
-    <li class="mb-1">
+
+    <!--Tags Dropdown-->
+    <li class="list-group-item">
       <button
         class="btn btn-toggle align-items-center rounded collapsed"
         data-bs-toggle="collapse"
@@ -339,11 +387,11 @@
             small
             overflow-auto
           "
-          style="max-height: 100px"
+          style="max-height: 150px"
         >
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="alone"
@@ -352,7 +400,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="group"
@@ -361,7 +409,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="meeting"
@@ -370,7 +418,7 @@
           </div>
           <div class="form-check">
             <input
-              class="form-check-input"
+              class="form-check-input shadow-none"
               type="checkbox"
               value=""
               id="quiet"
@@ -380,7 +428,9 @@
         </form>
       </div>
     </li>
-    <li class="mb-1">
+
+    <!-- StudyBuddy Dropdown
+    <li class="list-group-item">
       <button
         class="btn btn-toggle align-items-center rounded collapsed"
         data-bs-toggle="collapse"
@@ -437,6 +487,25 @@
           </div>
         </form>
       </div>
-    </li>
+    </li> -->
+
+    <!--FilterButton Dropdown-->
+    <a
+      class="list-group-item"
+      href="/"
+      class="
+        d-flex
+        align-items-center
+        pb-3
+        mb-3
+        link-dark
+        text-decoration-none
+        border-bottom
+        hover-dark
+      "
+    >
+      <span class="fs-5 fw-semibold">Filter Rooms</span>
+    </a>
+
   </ul>
 </div>

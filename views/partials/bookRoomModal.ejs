@@ -1,0 +1,173 @@
+<!-- OPEN MODAL ONCE PER SESSION
+<script>
+  $(document).ready(function () {
+    //loads when document is ready
+
+    if (document.cookie.indexOf("modal_shown=") >= 0) {
+      //do nothing if modal_shown cookie is present
+    } else {
+      $("#where").modal("show"); //show modal pop up
+      document.cookie = "modal_shown=seen"; //set cookie modal_shown
+      //cookie will expire when browser is closed
+    }
+  });
+</script> -->
+
+<!-- OPEN MODAL ALWAYS-->
+<script>
+  $(document).ready(function () {
+    $("#where").modal("show");
+  });
+</script>
+
+<!-- No of people modal -->
+<div
+  class="modal fade"
+  id="where"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="where"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="where-title">
+          How many people do you wanna book for?&nbsp;
+        </h5>
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body ">
+        <div class="container">
+          <form>
+            <div class="form-group">
+              <input
+                type="range"
+                class="form-control-range w-100 p-2"
+                id="noOfPeople"
+                min="1"
+                max="12"
+                onInput="$('#rangeval').html($(this).val())"
+                value="1"
+                step="1"
+              />
+              <h5 id="rangeval" class="text-center">1</h5>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          class="btn btn-sebtn-outline-dark"
+          data-bs-target="#when"
+          data-bs-toggle="modal"
+          data-bs-dismiss="modal"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Select tags modal -->
+<div
+  class="modal fade"
+  id="when"
+  aria-hidden="true"
+  aria-labelledby="whereLabel"
+  tabindex="-1"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <!--Modal Header-->
+      <div class="modal-header">
+        <h5 class="modal-title" id="when-title">
+          Select Tags&nbsp;
+        </h5>
+        <ion-icon name="book-outline" size="large"></ion-icon>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!--Modal Body-->
+      <div class="modal-body">
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-quiet"
+          autocomplete="off"
+          style="outline: 0"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-quiet"
+          style="margin-bottom: 0.3em"
+          >Quiet</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-meeting"
+          autocomplete="off"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-meeting"
+          style="margin-bottom: 0.3em"
+          >Meeting</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-group"
+          autocomplete="off"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-group"
+          style="margin-bottom: 0.3em"
+          >Group</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-alone"
+          autocomplete="off"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-alone"
+          style="margin-bottom: 0.3em"
+          >Alone</label
+        >
+        
+      </div>
+
+      <div class="modal-footer">
+        <button
+          class="btn btn-sebtn-outline-dark"
+          data-bs-target="#where"
+          data-bs-toggle="modal"
+          data-bs-dismiss="modal"
+        >
+          Back
+        </button>
+
+        <button class="btn btn-sebtn-outline-dark" data-bs-dismiss="modal">
+          Finish
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

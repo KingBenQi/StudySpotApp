@@ -134,8 +134,8 @@
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
             >
-              <div class="modal-dialog">
-                <div class="modal-content">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content ">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">
                       Reset Password
@@ -149,11 +149,11 @@
                   </div>
                   <div class="modal-body">
                     <p class="py-2">
-                        Enter your email address below and we will send you a link to reset your password.
+                        Enter your 6 digit pin to reset password.
                     </p>
                   <form action="/resetpw" method="POST" class="py-2 mb-3">
                     <div class="mb-3">
-                      <label class="form-label" for="currentpw">Registered Email Address</label>
+                      <label class="form-label" for="currentpw">6 digit password</label>
                       <input
                         class="form-control"
                         type="text"
@@ -162,7 +162,7 @@
                         required
                       />
                     </div>  
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" class="btn btn-outline-dark">
                         Reset Password
                     </button>                    
                     </form>
