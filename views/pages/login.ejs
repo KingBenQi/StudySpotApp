@@ -7,6 +7,7 @@
     <div class="container-fluid">
       <div><%- include('../partials/loginheader'); %></div>
       <div class="container-fluid my-5 py-3" style="max-width: 500px">
+        <!--new to studyspot and already registered tabs-->
         <ul
           class="nav nav-tabs d-flex justify-content-center"
           id="myTab"
@@ -41,74 +42,85 @@
             </button>
           </li>
         </ul>
-        <div class="tab-content text-center" id="myTabContent">
+
+        <div class="tab-content" id="myTabContent">
+          <!--new to studyspot tab-->
           <div
-            class="tab-pane fade my-2"
+            class="tab-pane fade my-4"
             id="register"
             role="tabpanel"
             aria-labelledby="register-tab"
           >
-            <h1>Register</h1>
-            <form action="/register" method="POST" class="py-4">
+            <h1 class="text-center">Register</h1>
+            <form action="/register" method="POST" class="pb-2">
+              <!--email address-->
               <div class="mb-3">
-                <label class="form-label" for="email">Email Address</label>
+                <label class="form-label" for="email-register"
+                  >Email Address</label
+                >
                 <input
                   class="form-control"
                   type="email"
-                  id="email"
+                  id="email-register"
                   name="email"
                   required
                 />
               </div>
+              <!--password-->
               <div class="mb-3">
-                <label class="form-label" for="password">Password</label>
-                <input
-                  class="form-control"
-                  type="password"
-                  id="password"
-                  name="password"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label class="form-label" for="confirmpw"
-                  >Confirm Password</label
+                <label class="form-label" for="password-register"
+                  >Password</label
                 >
                 <input
                   class="form-control"
                   type="password"
-                  id="confirmpw"
-                  name="confirmpw"
+                  id="password-register"
+                  name="password"
                   required
                 />
               </div>
-              <button class="btn btn-success">Sign Up</button>
+              <!--confirm password-->
+              <div class="mb-3">
+                <label class="form-label" for="confirmpw-register"
+                  >Confirm Password</label
+                >
+                <input class="form-control text-center"" type="password"
+                id="confirmpw-register" name="confirmpw" required />
+              </div>
+              <!--sign up button-->
+              <div class="text-center">
+                <button class="btn btn-sebtn-outline-dark">Sign Up</button>
+              </div>
             </form>
           </div>
+
+          <!--already registered tab-->
           <div
-            class="tab-pane fade show active my-2"
+            class="tab-pane fade show active my-4"
             id="login"
             role="tabpanel"
             aria-labelledby="login-tab"
           >
-            <h1>Sign In</h1>
-            <form action="/login" method="POST" class="py-4">
+            <h1 class="text-center">Sign In</h1>
+            <form action="/login" method="POST" class="pb-2">
               <div class="mb-3">
-                <label class="form-label" for="email">Login with Email</label>
+                <label class="form-label" for="email-login"
+                  >Login with Email</label
+                >
                 <input
                   class="form-control"
                   type="text"
-                  id="email"
+                  id="email-login"
                   name="email"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label class="form-label" for="password">Password</label>
+                <label class="form-label" for="password-login">Password</label>
                 <input
                   class="form-control"
                   type="password"
-                  id="password"
+                  id="password-login"
                   name="password"
                   required
                 />
@@ -116,14 +128,16 @@
               <!-- Trigger modal -->
               <p>
                 <a
-                  class="font-italic"
+                  class="font-italic nounderline"
                   href="#exampleModal"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
                   >Forgot your Password?</a
                 >
               </p>
-              <button class="btn btn-success">Sign In</button>
+              <div class="text-center">
+                <button class="btn btn-sebtn-outline-dark">Sign In</button>
+              </div>
             </form>
 
             <!-- Modal -->
@@ -135,7 +149,7 @@
               aria-hidden="true"
             >
               <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content ">
+                <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">
                       Reset Password
@@ -149,33 +163,35 @@
                   </div>
                   <div class="modal-body">
                     <p class="py-2">
-                        Enter your 6 digit pin to reset password.
+                      Enter your 6 Digit Pin to Reset Password.
                     </p>
-                  <form action="/resetpw" method="POST" class="py-2 mb-3">
-                    <div class="mb-3">
-                      <label class="form-label" for="currentpw">6 digit password</label>
-                      <input
-                        class="form-control"
-                        type="text"
-                        id="currentpw"
-                        name="currentpw"
-                        required
-                      />
-                    </div>  
-                    <button type="button" class="btn btn-outline-dark">
+                    <form action="/resetpw" method="POST" class="py-2 mb-3">
+                      <div class="mb-3">
+                        <label class="form-label" for="currentpw"
+                          >6 Digit Password</label
+                        >
+                        <input
+                          class="form-control"
+                          type="text"
+                          id="currentpw"
+                          name="currentpw"
+                          required
+                        />
+                      </div>
+
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancel
+                      </button>
+
+                      <button type="button" class="btn btn-sebtn-outline-dark">
                         Reset Password
-                    </button>                    
+                      </button>
                     </form>
-                  <div>
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Cancel
-                    </button>
-                    </div>
-                    
+                  </div>
                 </div>
               </div>
             </div>
