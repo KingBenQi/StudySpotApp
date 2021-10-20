@@ -1,0 +1,441 @@
+<!-- OPEN MODAL ONCE PER SESSION-->
+<!-- <script>
+  $(document).ready(function () {
+    //loads when document is ready
+
+    if (document.cookie.indexOf("modal_shown=") >= 0) {
+      //do nothing if modal_shown cookie is present
+    } else {
+      $("#where").modal("show"); //show modal pop up
+      document.cookie = "modal_shown=seen"; //set cookie modal_shown
+      //cookie will expire when browser is closed
+    }
+  });
+</script> -->
+
+<!-- OPEN MODAL ALWAYS-->
+<script>
+  $(document).ready(function () {
+    $("#where").modal("show");
+  });
+</script>
+
+<!-- WHERE do you wanna study modal -->
+<div
+  class="modal fade "
+  id="where"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="where"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="where-title">
+          Where do you wanna study?&nbsp;
+        </h5>
+        <ion-icon
+          name="book-outline"
+          size="large"
+          style="margin-bottom: 0.3em"
+        ></ion-icon>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-ADM"
+          autocomplete="off"
+          style="outline: 0"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-ADM"
+          style="margin-bottom: 0.3em"
+          >ADM</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-LHN"
+          autocomplete="off"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-LHN"
+          style="margin-bottom: 0.3em"
+          >LHN</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-BIW"
+          autocomplete="off"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-BIW"
+          style="margin-bottom: 0.3em"
+          >BIW</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-CBE"
+          autocomplete="off"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-CBE"
+          style="margin-bottom: 0.3em"
+          >CBE</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-LHS"
+          autocomplete="off"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-LHS"
+          style="margin-bottom: 0.3em"
+          >LHS</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-HSS"
+          autocomplete="off"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-HSS"
+          style="margin-bottom: 0.3em"
+          >HSS</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-NIE"
+          autocomplete="off"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-NIE"
+          style="margin-bottom: 0.3em"
+          >NIE</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-NS"
+          autocomplete="off"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-NS"
+          style="margin-bottom: 0.3em"
+          >NS</label
+        >
+
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-SBS"
+          autocomplete="off"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-SBS"
+          style="margin-bottom: 0.3em"
+          >SBS</label
+        >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-SPMS"
+          autocomplete="off"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-SPMS"
+          style="margin-bottom: 0.3em"
+          >SPMS</label
+        >
+
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-SS"
+          autocomplete="off"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-SS"
+          style="margin-bottom: 0.3em"
+          >SS</label
+        >
+
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btn-WKWSCI"
+          autocomplete="off"
+        />
+        <label
+          class="btn btn-outline-dark"
+          for="btn-WKWSCI"
+          style="margin-bottom: 0.3em"
+          >WKWSCI</label
+        >
+      </div>
+      <div class="modal-footer">
+        <button
+          class="btn btn-sebtn-outline-dark"
+          data-bs-target="#when"
+          data-bs-toggle="modal"
+          data-bs-dismiss="modal"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHEN do you wanna study modal -->
+<div
+  class="modal fade"
+  id="when"
+  aria-hidden="true"
+  aria-labelledby="whereLabel"
+  tabindex="-1"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+      <!--Modal Header-->
+      <div class="modal-header">
+        <h5 class="modal-title" id="when-title">
+          When do you wanna study?&nbsp;
+        </h5>
+        <ion-icon name="book-outline" size="large"></ion-icon>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!--Modal Body-->
+      <div class="modal-body">
+        <div class="row">
+
+          <!--Morning-->
+          <div class="column">
+            <div class="card" style="background-color: #87ceeb">
+              <h5>
+                Morning
+                <ion-icon
+                  name="partly-sunny-outline"
+                  size="large"
+                  style="margin-bottom: 0.3em"
+                ></ion-icon>
+                <div class="btn-group-vertical">
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-8to9"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-dark" for="btn-8to9"
+                    >08:30 - 09:30</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-9to10"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-dark" for="btn-9to10"
+                    >09:30 - 10:30</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-10to11"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-dark" for="btn-10to11"
+                    >10:30 - 11:30</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-11to12"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-dark" for="btn-11to12"
+                    >11:30 - 12:30</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-12to13"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-dark" for="btn-12to13"
+                    >12:30 - 13:30</label
+                  >
+                </div>
+              </h5>
+            </div>
+          </div>
+
+          <!--Afternoon-->
+          <div class="column">
+            <div class="card" style="background-color: #fad6a5">
+              <h5>
+                Afternoon
+                <ion-icon
+                  name="sunny-outline"
+                  size="large"
+                  style="margin-bottom: 0.3em"
+                ></ion-icon>
+
+                <div class="btn-group-vertical">
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-13to14"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-dark" for="btn-13to14"
+                    >13:30 - 14:30</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-14to15"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-dark" for="btn-14to15"
+                    >14:30 - 15:30</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-15to16"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-dark" for="btn-15to16"
+                    >15:30 - 16:30</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-16to17"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-dark" for="btn-16to17"
+                    >16:30 - 17:30</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-17to18"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-dark" for="btn-17to18"
+                    >17:30 - 18:30</label
+                  >
+                </div>
+              </h5>
+            </div>
+          </div>
+
+          <!--Evening-->
+          <div class="column">
+            <div
+              class="card"
+              style="background-color: rgb(112, 112, 150)"
+              style="margin-bottom: 0.3em"
+            >
+              <h5>
+                Evening
+                <ion-icon
+                  name="moon-outline"
+                  size="large"
+                  style="margin-bottom: 0.3em"
+                ></ion-icon>
+
+                <div class="btn-group-vertical">
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-18to19"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-dark" for="btn-18to19"
+                    >18:30 - 19:30</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-19to20"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-dark" for="btn-19to20"
+                    >19:30 - 20:30</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-20to21"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-dark" for="btn-20to21"
+                    >20:30 - 21:30</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-21to22"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-dark" for="btn-21to22"
+                    >21:30 - 22:30</label
+                  >
+                </div>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button
+          class="btn btn-sebtn-outline-dark"
+          data-bs-target="#where"
+          data-bs-toggle="modal"
+          data-bs-dismiss="modal"
+        >
+          Back
+        </button>
+
+        <button class="btn btn-sebtn-outline-dark" data-bs-dismiss="modal">
+          Finish
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
