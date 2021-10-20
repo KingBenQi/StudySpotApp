@@ -48,6 +48,11 @@ app.get("/mybookings", function (req, res) {
   res.render("pages/mybookings");
 });
 
+// timeslot page
+app.get("/timeslot", function (req, res) {
+  res.render("pages/timeslot");
+});
+
 app.get("/trying", function (req, res) {
   res.render("pages/trying");
 });
