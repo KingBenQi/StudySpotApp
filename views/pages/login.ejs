@@ -163,18 +163,26 @@
                   </div>
                   <div class="modal-body">
                     <p class="py-2">
-                      Enter your 6 Digit Pin to Reset Password.
+                      Enter your Email and 6 Digit Pin to Reset Password.
                     </p>
                     <form action="/resetpw" method="POST" class="py-2 mb-3">
                       <div class="mb-3">
-                        <label class="form-label" for="currentpw"
-                          >6 Digit Password</label
-                        >
+                        <label class="form-label" for="email">Email</label>
                         <input
                           class="form-control"
-                          type="text"
-                          id="currentpw"
-                          name="currentpw"
+                          type="email"
+                          id="email"
+                          name="email"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label" for="pin">6 Digit Pin</label>
+                        <input
+                          class="form-control"
+                          type="password"
+                          id="pin"
+                          name="pin"
                           required
                         />
                       </div>
