@@ -12,11 +12,13 @@
             <a href="/" class="btn btn-sebtn-outline-dark shadow-none">Back</a>
           </div>
           <div class="container-fluid pt-3 d-flex">
-            <h1 class="">TRXX 0930-1030</h1>
+            <h1 class="text-left">TRXX 0930-1030</h1>
+            <!-- Add to favourites button -->
             <form class="">
               <button class="btn" data-toggle="button" aria-pressed="false">
                 <ion-icon name="heart-outline" size="large"></ion-icon>
               </button>
+              <!-- Add code to change to filled heart if room is in favourites -->
             </form>
           </div>
         </div>
@@ -24,6 +26,7 @@
         <div class="row">
           <!--Left Column-->
           <div class="col-6 themed-grid-col">
+            <!-- js code to render 1 card with Quiet tag -->
             <% for (let i=0; i<1; i++) { %>
             <div class="col-md-6 card my-4" style="width: 100%">
               <div class="card-body">
@@ -63,6 +66,7 @@
                 Quiet 🤫
               </div>
             </div>
+            <!-- js code to render 2 cards with Group tag -->
             <% } %> <% for (let i=0; i<2; i++) { %>
             <div class="col-md-6 card my-4" style="width: 100%">
               <div class="card-body">
@@ -85,13 +89,15 @@
                 </svg>
               </div>
             </div>
+            <!-- js code to render 1 card with Alone tag -->
             <% } %> <% for (let i=0; i<1; i++) { %>
             <div class="col-md-6 card my-4" style="width: 100%">
               <div class="card-body">Alone ☝</div>
             </div>
-
+            <!-- js code to render 1 card with no tag -->
             <% } %> <% for (let i=0; i<1; i++) { %>
             <div class="col-md-6 card my-4" style="width: 100%">
+              <!-- Open modal to book slot -->
               <a
                 class=""
                 href="#howmany"
@@ -106,10 +112,12 @@
 
           <!--Right Column-->
           <div class="col-6 themed-grid-col">
+            <!-- js code to render 1 card with Meeting tag -->
             <% for (let i=0; i<1; i++) { %>
             <div class="col-md-6 card my-4" style="width: 100%">
               <div class="card-body">Meeting 💬</div>
             </div>
+            <!-- js code to render 2 cards with Group tag -->
             <% } %> <% for (let i=0; i<2; i++) { %>
             <div class="col-md-6 card my-4" style="width: 100%">
               <div class="card-body">
@@ -132,8 +140,10 @@
                 </svg>
               </div>
             </div>
+            <!-- js code to render 2 cards with no tag -->
             <% } %> <% for (let i=0; i<2; i++) { %>
             <div class="col-md-6 card my-4" style="width: 100%">
+              <!-- Open modal to book slot -->
               <a
                 class=""
                 href="#howmay"
