@@ -45,19 +45,19 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form>
+          <form id="bookSlider">
             <div class="form-group">
               <input
                 type="range"
                 class="form-control-range w-100 p-2"
-                id="noOfPeople"
+                id="noOfPeople-book"
                 min="1"
                 max="12"
-                onInput="$('#rangeval').html($(this).val())"
+                onInput="$('#rangeval-book').html($(this).val())"
                 value="1"
                 step="1"
               />
-              <h5 id="rangeval" class="text-center">1</h5>
+              <h5 id="rangeval-book" class="text-center">1</h5>
             </div>
           </form>
         </div>
@@ -103,20 +103,20 @@
         <input
           type="checkbox"
           class="btn-check"
-          id="btn-quiet"
+          id="btn-quiet-book"
           autocomplete="off"
           style="outline: 0"
         />
         <label
           class="btn btn-outline-dark"
-          for="btn-quiet"
+          for="btn-quiet-book"
           style="margin-bottom: 0.3em"
           >Quiet</label
         >
         <input
           type="checkbox"
           class="btn-check"
-          id="btn-meeting"
+          id="btn-meeting-book"
           autocomplete="off"
         />
         <label
@@ -128,19 +128,19 @@
         <input
           type="checkbox"
           class="btn-check"
-          id="btn-group"
+          id="btn-group-book"
           autocomplete="off"
         />
         <label
           class="btn btn-outline-dark"
-          for="btn-group"
+          for="btn-group-book"
           style="margin-bottom: 0.3em"
           >Group</label
         >
         <input
           type="checkbox"
           class="btn-check"
-          id="btn-alone"
+          id="btn-alone-book"
           autocomplete="off"
         />
         <label
@@ -152,12 +152,12 @@
         <input
           type="checkbox"
           class="btn-check"
-          id="btn-buddy"
+          id="btn-buddy-book"
           autocomplete="off"
         />
         <label
           class="btn btn-outline-dark"
-          for="btn-buddy"
+          for="btn-buddy-book"
           style="margin-bottom: 0.3em"
           >Study Buddy</label
         >

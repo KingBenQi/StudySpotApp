@@ -47,19 +47,20 @@
       <div class="modal-body">
         <div class="container">
           <!--range slider-->
-          <form>
+          <form id="editSlider">
             <div class="form-group">
               <input
                 type="range"
                 class="form-control-range w-100 p-2"
-                id="noOfPeople"
+                id="noOfPeople-edit"
                 min="1"
                 max="12"
-                onInput="$('#rangeval').html($(this).val())"
+                onInput="$('#rangeval-edit').html($(this).val())"
                 value="1"
                 step="1"
               />
-              <h5 id="rangeval" class="text-center">1</h5>
+              <!-- change value of "value" to indicate original no of people booked for -->
+              <h5 id="rangeval-edit" class="text-center">1</h5>
             </div>
           </form>
         </div>
@@ -79,7 +80,7 @@
   </div>
 </div>
 
-<!-- Select tags modal -->
+<!-- Edit tags modal -->
 <div
   class="modal fade"
   id="tag-edit"
@@ -106,61 +107,61 @@
         <input
           type="checkbox"
           class="btn-check"
-          id="btn-quiet"
+          id="btn-quiet-edit"
           autocomplete="off"
           style="outline: 0"
         />
         <label
           class="btn btn-outline-dark"
-          for="btn-quiet"
+          for="btn-quiet-edit"
           style="margin-bottom: 0.3em"
           >Quiet</label
         >
         <input
           type="checkbox"
           class="btn-check"
-          id="btn-meeting"
+          id="btn-meeting-edit"
           autocomplete="off"
         />
         <label
           class="btn btn-outline-dark"
-          for="btn-meeting"
+          for="btn-meeting-edit"
           style="margin-bottom: 0.3em"
           >Meeting</label
         >
         <input
           type="checkbox"
           class="btn-check"
-          id="btn-group"
+          id="btn-group-edit"
           autocomplete="off"
         />
         <label
           class="btn btn-outline-dark"
-          for="btn-group"
+          for="btn-group-edit"
           style="margin-bottom: 0.3em"
           >Group</label
         >
         <input
           type="checkbox"
           class="btn-check"
-          id="btn-alone"
+          id="btn-alone-edit"
           autocomplete="off"
         />
         <label
           class="btn btn-outline-dark"
-          for="btn-alone"
+          for="btn-alone-edit"
           style="margin-bottom: 0.3em"
           >Alone</label
         >
         <input
           type="checkbox"
           class="btn-check"
-          id="btn-buddy"
+          id="btn-buddy-edit"
           autocomplete="off"
         />
         <label
           class="btn btn-outline-dark"
-          for="btn-buddy"
+          for="btn-buddy-edit"
           style="margin-bottom: 0.3em"
           >Study Buddy</label
         >
@@ -184,6 +185,7 @@
   </div>
 </div>
 
+<!-- Delete occupancy -->
 <div
   class="modal fade"
   id="deleteOccupancy"
@@ -208,9 +210,6 @@
       </div>
 
       <div class="modal-body">
-        <div class="container"></div>
-      </div>
-      <div class="modal-footer">
         <button
           class="btn btn-secondary"
           data-bs-target="#howmany-edit"
@@ -223,6 +222,8 @@
         <button class="btn btn-sebtn-outline-dark" data-bs-dismiss="modal">
           Delete
         </button>
+        <!-- add code to remove occupancy and update database -->
+
       </div>
     </div>
   </div>
