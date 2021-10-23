@@ -20,22 +20,23 @@
   });
 </script> -->
 
-<!-- No of people modal -->
+<!-- Edit no of people modal -->
 <div
   class="modal fade"
-  id="howmany"
+  id="howmany-edit"
   tabindex="-1"
   role="dialog"
-  aria-labelledby="howmany"
+  aria-labelledby="howmany-edit"
   aria-hidden="true"
 >
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="howmany-title">
+        <h5 class="modal-title" id="howmany-edit-title">
           How many people do you wanna book for?&nbsp;
         </h5>
 
+        <!--close button-->
         <button
           type="button"
           class="btn-close"
@@ -45,6 +46,7 @@
       </div>
       <div class="modal-body">
         <div class="container">
+          <!--range slider-->
           <form>
             <div class="form-group">
               <input
@@ -63,9 +65,11 @@
         </div>
       </div>
       <div class="modal-footer">
+
+        <!--Next button-->
         <button
           class="btn btn-sebtn-outline-dark"
-          data-bs-target="#tag"
+          data-bs-target="#tag-edit"
           data-bs-toggle="modal"
           data-bs-dismiss="modal"
         >
@@ -79,7 +83,7 @@
 <!-- Select tags modal -->
 <div
   class="modal fade"
-  id="tag"
+  id="tag-edit"
   aria-hidden="true"
   aria-labelledby="whereLabel"
   tabindex="-1"
@@ -88,7 +92,7 @@
     <div class="modal-content">
       <!--Modal Header-->
       <div class="modal-header">
-        <h5 class="modal-title" id="tag-title">Select Tags&nbsp;</h5>
+        <h5 class="modal-title" id="tag-edit-title">Edit Tags&nbsp;</h5>
         <ion-icon name="book-outline" size="large"></ion-icon>
         <button
           type="button"
@@ -166,7 +170,7 @@
       <div class="modal-footer">
         <button
           class="btn btn-secondary"
-          data-bs-target="#howmany"
+          data-bs-target="#howmany-edit"
           data-bs-toggle="modal"
           data-bs-dismiss="modal"
         >
@@ -175,6 +179,52 @@
 
         <button class="btn btn-sebtn-outline-dark" data-bs-dismiss="modal">
           Finish
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="deleteOccupancy"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="deleteOccupancy"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteOccupancy-title">
+          Delete Occupancy?&nbsp;
+        </h5>
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="container">
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          class="btn btn-secondary"
+          data-bs-target="#howmany-edit"
+          data-bs-toggle="modal"
+          data-bs-dismiss="modal"
+        >
+          Cancel
+        </button>
+
+        <button class="btn btn-sebtn-outline-dark" data-bs-dismiss="modal">
+          Delete
         </button>
       </div>
     </div>
