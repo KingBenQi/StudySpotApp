@@ -30,7 +30,6 @@
             <% for (let i=0; i<1; i++) { %>
             <div class="col-md-6 card my-4" style="width: 100%">
               <div class="card-body">
-                <%- include('../partials/header'); %>
                 <div>
                   <a
                     class="btn px-1 py-0"
@@ -47,12 +46,12 @@
                   >
                     <ion-icon name="create-outline"></ion-icon>
                   </a>
-                  <button
+                  <a
                     class="btn px-1 py-0"
                     type="button"
-                    href="#deletebooking"
+                    href="#deleteOccupancy"
                     data-bs-toggle="modal"
-                    data-bs-target="#deletebooking"
+                    data-bs-target="#deleteOccupancy"
                     style="
                       background-color: #ed7966;
                       top: 0;
@@ -61,7 +60,7 @@
                     "
                   >
                     <ion-icon name="trash-outline"></ion-icon>
-                  </button>
+                  </a>
                 </div>
                 Quiet 🤫
               </div>
@@ -70,6 +69,38 @@
             <% } %> <% for (let i=0; i<2; i++) { %>
             <div class="col-md-6 card my-4" style="width: 100%">
               <div class="card-body">
+                <div>
+                  <a
+                    class="btn px-1 py-0"
+                    type="button"
+                    href="#howmany-edit"
+                    data-bs-toggle="modal"
+                    data-bs-target="#howmany-edit"
+                    style="
+                      background-color: #ed7966;
+                      top: 0;
+                      right: 24px;
+                      position: absolute;
+                    "
+                  >
+                    <ion-icon name="create-outline"></ion-icon>
+                  </a>
+                  <a
+                    class="btn px-1 py-0"
+                    type="button"
+                    href="#deleteOccupancy"
+                    data-bs-toggle="modal"
+                    data-bs-target="#deleteOccupancy"
+                    style="
+                      background-color: #ed7966;
+                      top: 0;
+                      right: 0;
+                      position: absolute;
+                    "
+                  >
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </a>
+                </div>
                 Group
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +123,41 @@
             <!-- js code to render 1 card with Alone tag -->
             <% } %> <% for (let i=0; i<1; i++) { %>
             <div class="col-md-6 card my-4" style="width: 100%">
-              <div class="card-body">Alone ☝</div>
+              <div class="card-body">
+                <div>
+                  <a
+                    class="btn px-1 py-0"
+                    type="button"
+                    href="#howmany-edit"
+                    data-bs-toggle="modal"
+                    data-bs-target="#howmany-edit"
+                    style="
+                      background-color: #ed7966;
+                      top: 0;
+                      right: 24px;
+                      position: absolute;
+                    "
+                  >
+                    <ion-icon name="create-outline"></ion-icon>
+                  </a>
+                  <a
+                    class="btn px-1 py-0"
+                    type="button"
+                    href="#deleteOccupancy"
+                    data-bs-toggle="modal"
+                    data-bs-target="#deleteOccupancy"
+                    style="
+                      background-color: #ed7966;
+                      top: 0;
+                      right: 0;
+                      position: absolute;
+                    "
+                  >
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </a>
+                </div>
+                Alone ☝
+              </div>
             </div>
             <!-- js code to render 1 card with no tag -->
             <% } %> <% for (let i=0; i<1; i++) { %>
@@ -115,12 +180,78 @@
             <!-- js code to render 1 card with Meeting tag -->
             <% for (let i=0; i<1; i++) { %>
             <div class="col-md-6 card my-4" style="width: 100%">
-              <div class="card-body">Meeting 💬</div>
+              <div class="card-body">
+                <div>
+                  <a
+                    class="btn px-1 py-0"
+                    type="button"
+                    href="#howmany-edit"
+                    data-bs-toggle="modal"
+                    data-bs-target="#howmany-edit"
+                    style="
+                      background-color: #ed7966;
+                      top: 0;
+                      right: 24px;
+                      position: absolute;
+                    "
+                  >
+                    <ion-icon name="create-outline"></ion-icon>
+                  </a>
+                  <a
+                    class="btn px-1 py-0"
+                    type="button"
+                    href="#deleteOccupancy"
+                    data-bs-toggle="modal"
+                    data-bs-target="#deleteOccupancy"
+                    style="
+                      background-color: #ed7966;
+                      top: 0;
+                      right: 0;
+                      position: absolute;
+                    "
+                  >
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </a>
+                </div>
+                Meeting 💬
+              </div>
             </div>
             <!-- js code to render 2 cards with Group tag -->
             <% } %> <% for (let i=0; i<2; i++) { %>
             <div class="col-md-6 card my-4" style="width: 100%">
               <div class="card-body">
+                <div>
+                  <a
+                    class="btn px-1 py-0"
+                    type="button"
+                    href="#howmany-edit"
+                    data-bs-toggle="modal"
+                    data-bs-target="#howmany-edit"
+                    style="
+                      background-color: #ed7966;
+                      top: 0;
+                      right: 24px;
+                      position: absolute;
+                    "
+                  >
+                    <ion-icon name="create-outline"></ion-icon>
+                  </a>
+                  <a
+                    class="btn px-1 py-0"
+                    type="button"
+                    href="#deleteOccupancy"
+                    data-bs-toggle="modal"
+                    data-bs-target="#deleteOccupancy"
+                    style="
+                      background-color: #ed7966;
+                      top: 0;
+                      right: 0;
+                      position: absolute;
+                    "
+                  >
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </a>
+                </div>
                 Group
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -156,8 +287,8 @@
             <% } %>
           </div>
         </div>
-        <%- include('../partials/bookRoomModal'); %>
-        <%- include('../partials/editRoomModal'); %>
+        <%- include('../partials/bookRoomModal'); %> <%-
+        include('../partials/editRoomModal'); %> 
       </div>
       <footer><%- include('../partials/footer'); %></footer>
     </div>
