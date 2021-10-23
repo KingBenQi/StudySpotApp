@@ -3,92 +3,121 @@
   <head>
     <%- include('../partials/head'); %>
   </head>
-  <body class="d-flex flex-column min-vh-100">
-    <div class="container-fluid">
-      <div><%- include('../partials/header'); %></div>
-      <div class="row mt-5">
-        <div class="container-fluid mt-5 pt-3 d-flex justify-content-center">
-          <h1 class="">TRXX 0930-1030</h1>
-          <form class="">
-            <button class="btn" data-toggle="button" aria-pressed="false">
-              <ion-icon
-                name="heart-outline"
-                size="large"
-                style="float: right"
-              ></ion-icon>
-            </button>
-            Add to Favourites
-          </form>
-        </div>
-      </div>
-      <div class="row d-flex justify-content-center mb-3">
-        <% for (let i=0; i<1; i++) { %>
-        <div class="col-md-6 card ms-5 mt-4" style="width: 14rem">
-          <div class="card-body">Quiet 🤫</div>
-        </div>
-        <% } %> <% for (let i=0; i<1; i++) { %>
-        <div class="col-md-6 card ms-5 mt-4" style="width: 14rem">
-          <div class="card-body">Meeting 💬</div>
-        </div>
-        <% } %> <% for (let i=0; i<2; i++) { %>
-        <div class="col-md-6 card ms-5 mt-4" style="width: 14rem">
-          <div class="card-body">
-            Study Buddy
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-people-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-              />
-              <path
-                fill-rule="evenodd"
-                d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"
-              />
-              <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
-            </svg>
+  <body class="d-flex flex-column min-vh-250">
+    <div class="card border-light mb-3" style="background-color: #fff">
+      <div class="container-fluid">
+        <div><%- include('../partials/header'); %></div>
+        <div class="row mt-5">
+          <div class="btn container-fluid mt-5 pt-3 d-flex">
+            <a href="/" class="btn btn-sebtn-outline-dark shadow-none">Back</a>
+          </div>
+          <div class="container-fluid pt-3 d-flex">
+            <h1 class="text-left">TRXX 0930-1030</h1>
+            <form class="">
+              <button class="btn" data-toggle="button" aria-pressed="false">
+                <ion-icon
+                  name="heart-outline"
+                  size="large"
+                  style="float: right"
+                ></ion-icon>
+              </button>
+            </form>
           </div>
         </div>
-        <% } %> <% for (let i=0; i<4; i++) { %>
-        <div class="col-md-6 card ms-5 mt-4" style="width: 14rem">
-          <div class="card-body">
-            Group
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-person-plus-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-              />
-              <path
-                fill-rule="evenodd"
-                d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"
-              />
-            </svg>
+
+        <div class="row">
+          <!--Left Column-->
+          <div class="col-6 themed-grid-col">
+            <% for (let i=0; i<1; i++) { %>
+            <div class="col-md-6 card my-4" style="width: 100%">
+              <div class="card-body">Quiet 🤫</div>
+            </div>
+            <% } %> <% for (let i=0; i<2; i++) { %>
+            <div class="col-md-6 card my-4" style="width: 100%">
+              <div class="card-body">
+                Group
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-plus-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <% } %> <% for (let i=0; i<1; i++) { %>
+            <div class="col-md-6 card my-4" style="width: 100%">
+              <div class="card-body">Alone ☝</div>
+            </div>
+
+            <% } %> <% for (let i=0; i<1; i++) { %>
+            <div class="col-md-6 card my-4" style="width: 100%">
+              <a
+                class=""
+                href="#where"
+                data-bs-toggle="modal"
+                data-bs-target="#where"
+                ><div class="card-body"></div
+              ></a>
+              &nbsp;
+            </div>
+            <% } %>
+          </div>
+
+          <!--Right Column-->
+          <div class="col-6 themed-grid-col">
+            <% for (let i=0; i<1; i++) { %>
+            <div class="col-md-6 card my-4" style="width: 100%">
+              <div class="card-body">Meeting 💬</div>
+            </div>
+            <% } %> <% for (let i=0; i<2; i++) { %>
+            <div class="col-md-6 card my-4" style="width: 100%">
+              <div class="card-body">
+                Group
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-plus-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <% } %> <% for (let i=0; i<2; i++) { %>
+            <div class="col-md-6 card my-4" style="width: 100%">
+              <a
+                class=""
+                href="#where"
+                data-bs-toggle="modal"
+                data-bs-target="#where"
+                ><div class="card-body"></div
+              ></a>
+              &nbsp;
+            </div>
+            <% } %>
           </div>
         </div>
-        <% } %> <% for (let i=0; i<4; i++) { %>
-        <div class="col-md-6 card ms-5 mt-4" style="width: 14rem">
-          <a
-            class=""
-            href="#where"
-            data-bs-toggle="modal"
-            data-bs-target="#where"
-            ><div class="card-body"></div
-          ></a>
-        </div>
-        <% } %>
+        <%- include('../partials/bookRoomModal'); %>
       </div>
-      <%- include('../partials/bookRoomModal'); %>
+      <footer><%- include('../partials/footer'); %></footer>
     </div>
-    <footer><%- include('../partials/footer'); %></footer>
   </body>
 </html>
